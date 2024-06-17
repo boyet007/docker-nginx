@@ -1,4 +1,3 @@
-version: "3"
 services:
   app:
     build:
@@ -7,7 +6,6 @@ services:
     container_name: vue-app
     ports:
       - 8080:80
-
   nginx:
     image: nginx:alpine
     container_name: nginx-app

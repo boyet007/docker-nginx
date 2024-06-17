@@ -2,11 +2,11 @@ FROM node:18 as build-stage
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY ./myapp/package*.json ./
 
 RUN yarn install
 
-COPY . .
+COPY ./myapp .
 
 RUN yarn build
 
